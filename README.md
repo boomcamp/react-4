@@ -184,7 +184,7 @@ component.
 export default function Routes() {
   return (
     <Switch>
-      <Route exact component={Home} exact path="/" />
+      <Route exact component={Home} path="/" />
       <Route component={About} path="/about" />
     </Switch>
   );
@@ -236,7 +236,7 @@ import About from './components/About/About';
 export default function Routes() {
   return (
     <Switch>
-      <Route exact component={Home} exact path="/" />
+      <Route exact component={Home} path="/" />
       <Route component={About} path="/about" />
     </Switch>
   );
