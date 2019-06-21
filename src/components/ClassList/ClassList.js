@@ -31,6 +31,9 @@ export default class ClassList extends Component {
             </h3>
           </Link>
         ))}
+            <Link to="/">
+              <button className="button">Back</button>
+            </Link>
       </div>
     );
   }
