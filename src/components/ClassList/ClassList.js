@@ -25,6 +25,9 @@ export default class ClassList extends Component {
   render() {
     return (
       <div className="box">
+        <Link to="/" className="back_link">
+          <h3>Back</h3>
+        </Link>
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
         {this.state.students.map((student, i) => (

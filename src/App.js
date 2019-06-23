@@ -12,8 +12,6 @@ export default class App extends Component {
             <div className="link-wrap">
               <Link className="links" to="/">Home</Link>
               <Link className="links" to="/about">About</Link>
-              {/* <div className="links">Home</div> */}
-              {/* <div className="links">About</div> */}
             </div>
           </nav>
           <Routes />

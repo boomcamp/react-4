@@ -81,3 +81,18 @@ a {
   width: 60%;
   margin: 0 auto;
 }
+
+.back_link {
+  width: 10%;
+  height: 40px;
+  display: flex;
+  margin: -10px 2% 0 88%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.back_link:hover {
+  background-color: #143A56;
+  color: white;
+}

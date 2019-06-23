@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -21,6 +22,9 @@ export default class Student extends Component {
   render() {
     return (
       <div className="box">
+        <Link key={`${this.props.match.params.class}`} to={`../classlist/${this.props.match.params.class}`} className="back_link">
+          <h3>Back</h3>
+        </Link>
         <h1>Student</h1>
         <h1>
           {this.state.studentInfo.first_name} {this.state.studentInfo.last_name}
