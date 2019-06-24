@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 export default class Student extends Component {
   constructor() {
     super();
 
     this.state = {
-      studentInfo: {}
+      studentInfo: {},
     }
   }
 
@@ -18,6 +19,9 @@ export default class Student extends Component {
   render() {
     return (
       <div className='box'>
+        <Link to ={`/classlist/${this.state.studentInfo.class}`}>
+        <button>Back to Class</button>
+        </Link>
         <h1>Student:</h1>
         <h1>
           {this.state.studentInfo.first_name} {this.state.studentInfo.last_name}
