@@ -81,3 +81,19 @@ a {
   width: 60%;
   margin: 0 auto;
 }
+
+.box a, h1,h2, h3{
+  font-weight: 100;
+}
+.btn-back{
+  border: 1px solid #143A56;
+  padding: 10px 20px;
+  background: transparent;
+  color: #143A56;
+}
+
+.btn-back:hover{
+  border: 1px solid #143A56; 
+  background: #143A56;
+  color: #fff;
+}
