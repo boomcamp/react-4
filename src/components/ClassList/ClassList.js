@@ -12,9 +12,9 @@ export default class ClassList extends Component {
   componentDidMount() {
     axios
     .get(`http://localhost:9090/students?class=${this.props.match.params.class}`)
-    .then(results => {
+    .then(res => {
       this.setState({
-        students: results.data,
+        students: res.data,
       });
     });
   }
