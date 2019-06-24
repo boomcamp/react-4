@@ -23,6 +23,9 @@ export default class Student extends Component {
   render() {
     return (
       <div className="box">
+        <Link to={`/classlist/${this.state.studentInfo.class}`}>
+          <button>Back</button>
+        </Link>
         <h1>Student</h1>
         <h1>
           {this.state.studentInfo.first_name} {this.state.studentInfo.last_name}
