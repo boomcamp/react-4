@@ -10,6 +10,8 @@ h1, h2, h3, p {
   font-family: 'Crimson Text', serif;
 }
 
+.btn-back{ width: 90px; height: 35px; background-color: #143A56; color: #fff; border: none; border-radius: 6px;}
+
 .btn {
   font-size: 20px;
   height: 85px;
