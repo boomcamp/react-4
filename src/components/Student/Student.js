@@ -36,3 +36,4 @@ export default class Student extends Component {
     );
   }
 }
+
