@@ -81,3 +81,11 @@ a {
   width: 60%;
   margin: 0 auto;
 }
+
+.bread-crumb {
+  display: flex;
+}
+
+.bread-crumb h3 {
+  padding: 5px;
+}

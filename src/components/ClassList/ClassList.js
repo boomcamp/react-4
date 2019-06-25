@@ -8,6 +8,7 @@ export default class ClassList extends Component {
 
     this.state = {
       students: [],
+      currPage: ""
     };
 
   }
@@ -20,18 +21,27 @@ export default class ClassList extends Component {
         students: results.data,
       });
     });
+    this.setState({
+      currPage: this.props.match.params.class,
+    })
   }
 
   render() {
     return (
       <div className="box">
-        <div>
-          <Link back={this.props.match.params.class} to="/">Home</Link>
+        <div className="bread-crumb">
+          <Link to="/"><h3>Home</h3></Link>
+          <Link to={`/classlist/${this.state.currPage}`}><h3>{this.state.currPage}</h3></Link>
         </div>
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
         {this.state.students.map((student, i) => (
-          <Link key={student.id} to={`/student/${student.id}`}>
+          <Link key={student.id} to={{
+            pathname: `/student/${student.id}`,
+            state: {
+              pastUrl: this.state.currPage
+            }
+          }}>
             <h3 key={student.id}>
               {student.first_name} {student.last_name}
             </h3>
@@ -41,3 +51,5 @@ export default class ClassList extends Component {
     );
   }
 }
+
+//
