@@ -21,7 +21,17 @@ h1, h2, h3, p {
   cursor: pointer;
   color: #222;
 }
-
+.back-btn{
+font-size: 20px;
+  height: 40px;
+  width: 70px;
+  margin: 25px auto;
+  border: solid 2px black;
+  background: lightblue;
+  display: block;
+  cursor: pointer;
+  color: #222; 
+}
 .btn:focus {
   outline: none;
 }
