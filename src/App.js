@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
+import { HashRouter, Link } from 'react-router-dom';
+
+import Routes from './routes';
 
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <HashRouter>
+        <div>
         <nav className="nav">
           <div>WestSide University</div>
           <div className="link-wrap">
-            <div className="links">Home</div>
-            <div className="links">About</div>
+            <Link className="links" to="/">Home</Link>
+            <Link className="links" to="/about">About</Link>
           </div>
         </nav>
-      </div>
+        <Routes />
+        </div>
+      </HashRouter>
     );
   }
 }
