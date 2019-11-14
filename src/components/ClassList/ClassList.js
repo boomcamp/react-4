@@ -22,7 +22,7 @@ export default class ClassList extends Component {
       <div className="box">
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
-        {this.state.students.map((student, i) => (
+        {this.state.students.map(student => (
           <Link key={student.id} to={`/student/${student.id}`}>
             <h3>
               {student.first_name} {student.last_name}
