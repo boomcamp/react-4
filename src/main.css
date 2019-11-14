@@ -20,6 +20,24 @@ h1, h2, h3, p {
   display: block;
   cursor: pointer;
   color: #222;
+  box-shadow: 5px 5px #888888;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.btn:hover{
+  background-color: grey !important;
+  font-size: 20px;
+  height: 85px;
+  width: 250px;
+  margin: 25px auto;
+  border: solid 2px lightgray;
+  background: none;
+  display: block;
+  cursor: pointer;
+  color: white;
+  box-shadow: 5px 5px #888888;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .btn:focus {
@@ -32,6 +50,7 @@ h1, h2, h3, p {
   height: calc(100% - 135px);
   border: 2px solid lightgray;
   padding: 50px;
+  box-shadow: 5px 3px #888888;
 }
 
 nav {
@@ -80,4 +99,39 @@ a {
 .sub_box {
   width: 60%;
   margin: 0 auto;
+}
+.back{
+  background-color: #143A56;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  box-shadow: 5px 10px #888888;
+}
+.back:hover{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  box-shadow: 5px 10px #888888;
+}
+.style-name:hover{
+color: red;
 }
