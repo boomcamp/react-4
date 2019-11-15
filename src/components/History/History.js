@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class History extends Component {
   render() {
-    return (
+    return ( 
       <div>
         <h1 className="title">History of WestSide University:</h1>
         <p>
