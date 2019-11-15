@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { TiArrowBack } from "react-icons/ti";
+import styled from "styled-components";
 
 export default class ClassList extends Component {
   constructor() {
@@ -20,7 +22,9 @@ export default class ClassList extends Component {
   render() {
     return (
       <div className="box">
-        <Link to="/">↩</Link>
+        <Back>
+          <TiArrowBack onClick={this.props.history.goBack} />
+        </Back>
         <h1>{this.props.match.params.class}</h1>
 
         <h2>ClassList:</h2>
@@ -35,3 +39,8 @@ export default class ClassList extends Component {
     );
   }
 }
+
+const Back = styled.span`
+  font-size: 60px;
+  color: #143a56;
+`;

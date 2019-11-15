@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-
+import { TiArrowBack } from "react-icons/ti";
+import styled from "styled-components";
 export default class Student extends Component {
   constructor() {
     super();
@@ -9,6 +10,7 @@ export default class Student extends Component {
     };
   }
   componentDidMount() {
+    console.log(this.props);
     axios
       .get(`http://localhost:9090/students/${this.props.match.params.id}`)
       .then(res =>
@@ -20,6 +22,9 @@ export default class Student extends Component {
   render() {
     return (
       <div className="box">
+        <Back>
+          <TiArrowBack onClick={this.props.history.goBack} />
+        </Back>
         <h1>Student</h1>
         <h1>
           {this.state.studentInfo.first_name} {this.state.studentInfo.last_name}
@@ -30,3 +35,8 @@ export default class Student extends Component {
     );
   }
 }
+
+const Back = styled.span`
+  font-size: 60px;
+  color: #143a56;
+`;
