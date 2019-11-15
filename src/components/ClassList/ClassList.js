@@ -23,16 +23,23 @@ export default class ClassList extends Component {
 
   render() {
     return (
-      <div className="box">
-        <h1>{this.props.match.params.class}</h1>
-        <h2>ClassList:</h2>
-        {this.state.students.map((student, i) => (
-          <Link key={student.id} to={`/student/${student.id}`}>
-            <h3 key={student.id}>
-              {student.first_name} {student.last_name}
-            </h3>
+      <div>
+        <div className="subnav-back">
+          <Link to="/" className="subnav_links">
+            <h3>Back</h3>
           </Link>
-        ))}
+        </div>
+        <div className="box">
+          <h1>{this.props.match.params.class}</h1>
+          <h2>ClassList:</h2>
+          {this.state.students.map((student, i) => (
+            <Link key={student.id} to={`/student/${student.id}`}>
+              <h3 key={student.id}>
+                {student.first_name} {student.last_name}
+              </h3>
+            </Link>
+          ))}
+        </div>
       </div>
     );
   }
