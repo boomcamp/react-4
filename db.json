@@ -1,8 +1,8 @@
 {
     "students": [{
         "id": 1,
-        "first_name": "Wilona",
-        "last_name": "Peto",
+        "first_name": "Clark",
+        "last_name": "Amor",
         "email": "wpeto0@ft.com",
         "class": "MATH1010",
         "grade": "C"
