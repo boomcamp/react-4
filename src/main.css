@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text");
 
 body {
   margin: 0;
@@ -6,8 +6,11 @@ body {
   font-family: sans-serif;
 }
 
-h1, h2, h3, p {
-  font-family: 'Crimson Text', serif;
+h1,
+h2,
+h3,
+p {
+  font-family: "Crimson Text", serif;
 }
 
 .btn {
@@ -37,11 +40,11 @@ h1, h2, h3, p {
 nav {
   font-size: 24px;
   padding: 25px 50px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1px #222;
-  background: #143A56;
+  background: #143a56;
   color: white;
   height: 35px;
 }
@@ -53,7 +56,13 @@ nav {
   background: lightgray;
   padding: 0 75px 0 0;
 }
-
+.subnav-back {
+  display: flex;
+  justify-content: flex-start;
+  width: calc(100% - 75px);
+  background: lightgray;
+  padding: 0 0 0 75px;
+}
 .subnav_links {
   margin: 0 25px;
 }
