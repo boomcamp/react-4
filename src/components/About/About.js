@@ -9,13 +9,13 @@ export default class About extends Component {
     return (
       <div>
         <div className="subnav">
-          <Link to="/about">
+          <Link to="/about" className="subnav_links">
             <h3>About</h3>
           </Link>
-          <Link to="/about/history">
+          <Link to="/about/history" className="subnav_links">
             <h3>History</h3>
           </Link>
-          <Link to="/about/contact">
+          <Link to="/about/contact" className="subnav_links">
             <h3>Contact</h3>
           </Link>
         </div>

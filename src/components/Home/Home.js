@@ -5,9 +5,6 @@ export default class Home extends Component {
   render() {
     return (
       <div className="box">
-        <Link to="/">
-          <button>Home</button>
-        </Link>
         <Link to="classlist/MATH1010">
           <button className="btn">Math 1010</button>
         </Link>

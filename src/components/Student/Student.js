@@ -21,7 +21,7 @@ export default class Student extends Component {
   render() {
     return (
       <div className="box">
-        <button onClick={() => window.history.back()}>Back</button>
+        <button onClick={this.props.history.goBack}>Back</button>
         <h1>Student</h1>
         <h1>
           {this.state.studentInfo.first_name} {this.state.studentInfo.last_name}
