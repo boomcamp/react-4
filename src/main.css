@@ -45,7 +45,10 @@ nav {
   color: white;
   height: 35px;
 }
-
+.name{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
 .subnav {
   display: flex;
   justify-content: flex-end;
@@ -80,4 +83,16 @@ a {
 .sub_box {
   width: 60%;
   margin: 0 auto;
+}
+.button{
+  font-size:18px;
+  border:none;
+  padding:15px;
+
+  background-color: #143A56;
+  color:white;
+  border-radius:10px;
+}
+.button:hover{
+  background-color: black;
 }
