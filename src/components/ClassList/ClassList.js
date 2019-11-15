@@ -3,8 +3,8 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default class ClassList extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       students: []
     }
@@ -27,11 +27,11 @@ export default class ClassList extends Component {
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
         <ul>
-          {this.state.students.map(student => {
+          {this.state.students.map(stud => {
             return (
-              <Link key={student.id} to={`/student/${student.id}`}>
-                <h3 key={student.id}>
-                  {student.first_name} {student.last_name}
+              <Link key={stud.id} to={`/student/${stud.id}`}>
+                <h3 key={stud.id}>
+                  {stud.first_name} {stud.last_name}
                 </h3>
               </Link>
             )
