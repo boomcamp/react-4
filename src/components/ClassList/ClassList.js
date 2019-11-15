@@ -33,6 +33,12 @@ export default class ClassList extends Component {
             </h3>
           </Link>
         ))}
+        <button
+          className="back-btn"
+          onClick={() => this.props.history.goBack()}
+        >
+          Back
+        </button>
       </div>
     );
   }
