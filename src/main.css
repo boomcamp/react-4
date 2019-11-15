@@ -81,3 +81,14 @@ a {
   width: 60%;
   margin: 0 auto;
 }
+.backBtn {
+  border:1px solid #333;
+  padding: 8px 1%;
+  border-radius: 15px
+}
+.backBtn:hover {
+  background-color: rgb(17, 191, 235);
+  color:#fff;
+  border: #fff;
+  transition: 5000
+}
